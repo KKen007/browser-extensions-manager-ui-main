@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link class="stylesheet" rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+</head>
+<body>
+  <main>
+    <header>
+      <img class="logo" src="assets/images/logo.svg" alt="logo">
+        <button class="theme">
+          <img src="assets/images/icon-moon.svg" alt="">
+        </button>
+    </header>
+    <section class="extensions-list">
+      <div class="top">
+        <h1>Extensions List</h1>
+        <ul class="filter">
+          <li><button class="all-button" data-on="true">All</button></li>
+          <li><button class="active-button" data-on="false">Active</button></li>
+          <li><button class="inactive-button" data-on="false">Inactive</button></li>
+        </ul>
+      </div>
+      <div class="grid">
+        <section class="extension" data-active="true" data-remove="false">
+          <div class="description">
+            <img class="ext-logo" src="assets/images/logo-devlens.svg" alt="">
+            <div class="title-paragraph">
+              <h2>DevLens</h2>
+              <p>Quickly inspect page layouts and visualize element boundaries.</p>
+            </div>
+          </div>
+          <div class="option">
+            <button class="remove">Remove</button>
+            <button class="on-off">
+              <span></span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+<script type="module" src="main.js"></script>
+</html>
