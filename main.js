@@ -7,7 +7,7 @@ let theme = document.querySelector(".theme");
 let stylesheet = document.querySelector(".stylesheet");
 let logo = document.querySelector(".logo");
 
-fetch("data.json")
+fetch("https://kken007.github.io/browser-extensions-manager-ui-main/data.json")
 .then(response => response.json())
 .then(data => {
 
